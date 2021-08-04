@@ -8,7 +8,9 @@ You will be able to see the company's sector, industry, financials, peer compari
 
 # How do I use it
 
-Just download main.py, MHF_fundamentals.py, MHF_html.py and double-bubble-outline.png. Then navigate to main.py from terminal and run it (Using python3 main.py). You will be prompted to type in the ticker symbol you are interested in (AAPL, MSFT, CAKE, BABA, etc.) and after a few seconds, you should see an html file open up with all the relevant information.
+Just download main.py, MHF_fundamentals.py, MHF_html.py and double-bubble-outline.png. Open main.py and appropriately edit the file path (the first line in the main function) to point to wherever you have downloaded the files to.
+
+Then navigate to main.py from terminal and run it (Using python3 main.py). You will be prompted to type in the ticker symbol you are interested in (AAPL, MSFT, CAKE, BABA, etc.) and after a few seconds, you should see an html file open up with all the relevant information.
 
 # Disclaimers
 
