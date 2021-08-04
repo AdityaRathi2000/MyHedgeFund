@@ -4,7 +4,7 @@ Trading stocks is fun, but investing in companies that you believe in is a lot m
 
 # What will I be able to see using MHF
 
-You will be able to see the company's sector, industry, financials, peer comparison, current affairs, insider trading, ETF involvement and visualization of some of the data!
+You will be able to see the company's sector, industry, financials, peer comparison, current affairs, insider trades, ETF involvement, some analytics and buy/sell recommendations and visualization of some of the data!
 
 # How do I use it
 
