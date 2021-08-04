@@ -4,7 +4,7 @@ import MHF_fundamentals as mhf_f
 import MHF_html as mhf_html
 
 if __name__ == '__main__':
-  filePath = "file:///Users/adityarathi/PycharmProjects/fin/index.html"
+  filePath = "file:///Users/adityarathi/Downloads/MyHedgeFund-main/index.html"
 
   start = dt.datetime(2020, 9, 1)
   end = dt.datetime.now().date()
