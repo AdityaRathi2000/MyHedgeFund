@@ -317,6 +317,8 @@ def insider_df_creation(ticker, req_headers):
     insider_df = insider_df.drop(indices_to_remove)
     insider_df["Trade Date"] = insider_df["Trade Date"].apply(lambda x: dt.datetime.strptime(x, '%Y-%m-%d'))
     insider_df_curr_year = insider_df[insider_df["Trade Date"].apply(lambda x: x.year == dt.datetime.now().year)]
+    if(insider_df_curr_year.empty):
+        insider_df_curr_year = insider_df
     insider_df_curr_year['Qty'] = insider_df_curr_year['Qty'].apply(lambda x: round(float(x.replace(',', '')), 2))
     insider_df_curr_year.loc[insider_df_curr_year['Qty'] <= 0, 'Type'] = 'Sale'
     insider_df_curr_year.loc[insider_df_curr_year['Qty'] > 0, 'Type'] = 'Buy'
