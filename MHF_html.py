@@ -42,5 +42,5 @@ def print_html_bold(text):
   text = str(text)
   return '<strong>' + str(text) + '</strong>'
 
-def graph_imgs(g_name, company, width, height):
-  return '<Center><img src="file:///Users/adityarathi/PycharmProjects/fin/{}.png"  width="{}" height="{}"></Center>'.format(g_name, width, height)
+def graph_imgs(g_name, company, width, height, filePath_no_idx):
+  return '<Center><img src="{}/{}.png"  width="{}" height="{}"></Center>'.format(filePath_no_idx, g_name, width, height)
