@@ -5,6 +5,7 @@ import MHF_html as mhf_html
 
 if __name__ == '__main__':
   filePath = "file:///Users/adityarathi/Downloads/MyHedgeFund-main/index.html"
+  filePath_no_idx = filePath.split('index.html')[0]
 
   start = dt.datetime(2020, 9, 1)
   end = dt.datetime.now().date()
@@ -89,7 +90,7 @@ if __name__ == '__main__':
         webpage_data += mhf_html.print_html("<Center>Recommendation based on trend: <g>{}</g></Center>".format(mhf_html.print_html_bold(globalResultsDict[i])))
     else:
         webpage_data += mhf_html.print_html("<Center>Recommendation based on trend: <r>{}</r></Center>".format(mhf_html.print_html_bold(globalResultsDict[i])))
-    webpage_data += mhf_html.graph_imgs(i, watchList[watching], 460, 345)
+    webpage_data += mhf_html.graph_imgs(i, watchList[watching], 460, 345, filePath_no_idx)
     webpage_data += mhf_html.print_html("</div>")
 
   webpage_data += mhf_html.end_html()
