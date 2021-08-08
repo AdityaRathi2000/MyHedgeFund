@@ -8,7 +8,7 @@ You will be able to see the company's sector, industry, financials, peer compari
 
 # How do I use it
 
-Just download main.py, MHF_fundamentals.py, MHF_html.py and double-bubble-outline.png. Open main.py and appropriately edit the file path (the first line in the main function) to point to wherever you have downloaded the files to.
+Just download main.py, MHF_fundamentals.py, MHF_html.py and double-bubble-outline.png. Open main.py and appropriately edit the file path (the first line in the main function) to point to wherever you have downloaded the files to. Additionally, using this tutorial (http://www.automationtestinghub.com/download-chrome-driver/) download the chromedriver for your device, and edit the path for that. This will automatically open the html file when you run the code and act as a dashboard for you to easily view the results!
 
 Then navigate to main.py from terminal and run it (Using python3 main.py). You will be prompted to type in the ticker symbol you are interested in (AAPL, MSFT, CAKE, BABA, etc.) and after a few seconds, you should see an html file open up with all the relevant information.
 
