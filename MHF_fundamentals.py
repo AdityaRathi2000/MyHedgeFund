@@ -230,8 +230,8 @@ def competitor_func(ticker, req_headers):
               data_stock = '0';
           data_list.append(float(data_stock.replace(',','')))
       roa_roe_list = roe_roa(i, req_headers)
-      data_list.append(float(roa_roe_list[0].replace('%','')))
-      data_list.append(float(roa_roe_list[1].replace('%','')))
+      data_list.append(float(roa_roe_list[0].replace('N/A','0').replace('%','')))
+      data_list.append(float(roa_roe_list[1].replace('N/A','0').replace('%','')))
 
       if (len(competitor_df) != len(data_list)):
           continue;
